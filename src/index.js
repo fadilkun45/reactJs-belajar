@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import Lifecycle from './reactjsdasar/lifecycle';
+// import StateProps from './reactjsdasar/StateProps';
+// import Tes from './reactjsdasar/Tes';
+// import Map from './reactjsdasar/Map' ;
+// import App from './App';
+// import Variable from "./reactjsdasar/Variabel";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Crud from './crud';
+// import BelajarReact from './belajarReact1';
+// import PixivAPI from './PIXIV api';
+import Reactrouter from './routerReact';
+// import Navbar from './navbar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <Lifecycle /> */}
+    {/* <Map /> */}
+    {/* <StateProps /> */}
+    {/* <Tes /> */}
+    {/* <Crud/> */}
+    {/* <BelajarReact /> */}
+    {/* <PixivAPI /> */}
+    <Reactrouter />
+    {/* <Navbar /> */}
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

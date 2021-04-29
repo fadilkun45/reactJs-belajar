@@ -1,0 +1,133 @@
+* {
+    padding: 0 ;
+    margin: 0 ;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav {
+    background-color: #20232a ;
+    color: #ffffff ;
+    padding: 10px ;
+    font-size: 25px ;
+    display: flex ;
+    justify-content: center ;
+}
+
+nav p {
+    margin-top: 5px ;
+}
+
+/* react animation */
+
+@keyframes muter {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+nav img {
+    width: 40px ;
+    height: 40px ;
+    margin-right: 10px ;
+    animation: muter 4s linear infinite ;
+}
+
+.container {
+    width: 700px ;
+    margin: 20px auto;
+    display: grid ;
+    grid-template-areas: "judul judul" "contentA contentB" "last-sec last-sec";
+    text-align: center ;
+    row-gap: 20px ;
+    column-gap :20px ;
+}
+
+.judul {
+    grid-area: judul ;
+}
+
+.contentA {
+    grid-area: contentA ;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    padding: 10px ;
+    transition: 0.5s ease;
+    margin-top: 30px ;
+}
+
+.contentB {
+    grid-area: contentB ;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    padding: 10px ;
+    transition: 0.5s ease;
+    margin-top: 30px ;
+}
+
+.contentA:hover, .contentB:hover {
+    /* margin : 0 20px ; */
+    transform: scale(1.1);
+}
+
+.contentA h4 , .contentB h4{
+    font-size: 25px ;
+    font-weight: 400 ;
+}
+
+.contentA p, .contentB p {
+    font-size: 17px ;
+    text-align: center ;
+    margin: 10px auto;
+}
+
+.contentA button, .contentB button {
+    padding: 10px ;
+    border: none ;
+    cursor: pointer ;
+    border-radius: 3px ;
+    background-color: lightgreen ;
+    transition: 0.5s ;
+}
+
+.contentA button:hover , .contentB button:hover {
+    background-color: green ;
+}
+
+.penutup {
+    margin-top: 30px ;
+    padding: 10px ;
+    text-align: center ;
+    grid-area: last-sec;
+    background-color: grey ;
+    display: block;
+    height: 50px ;
+    line-height: 50px ;
+}
+
+footer {
+    text-align: center ;
+    padding: 10px ;
+    background-color: lightgreen ;
+    margin-bottom:  0 ;
+}
+
+@media only screen and (max-width : 1100px ){
+    .container {
+        width : 500px ;
+        grid-template-areas : "judul" "contentA" "contentB" "last-sec" ;
+    }
+}
+
+@media only screen and (max-width : 600px ){
+    .container {
+        width : 330px ;
+        grid-template-areas : "judul" "contentA" "contentB" "last-sec" ;
+    }
+}
